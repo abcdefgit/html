@@ -1,0 +1,64 @@
+body {
+    background-color: #f0f0f0;
+    padding: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dotted;
+    padding: 10px 20px;
+    background-color: white;
+    gap: 20px;
+}
+
+#myButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f011;
+}
+
+#profile-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+    /* 여기에 작성하는 스타일은 모바일(500px 이하)에서만 적용됩니다! */
+
+    body {
+        background-color: lightblue;
+        /* 1. 배경색을 연한 하늘색으로 변경 */
+        padding: 20px;
+        /* 2. 전체 여백을 줄여서 공간 확보 */
+    }
+
+    .card {
+        width: 90%;
+        /* 3. 카드가 화면 너비의 90%를 차지하게 */
+        border: 2px solid #333;
+        /* 4. 점선을 실선으로 변경 */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        /* 5. 제목 글자를 모바일에 맞게 작게 조절 */
+    }
+}
